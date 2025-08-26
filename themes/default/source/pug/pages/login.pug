@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    //- Include head
+    include ../layout/head.pug
+    body
+        .auth
+            .auth-main.auth-main--login
+                .auth-box
+                    .auth-box-main
+                        .auth-box-title
+                            a(href="#")
+                                include ../../../web/images/arrow-prev.svg
+                            span Login
+                        .auth-box-form
+                            .form-group
+                                input(type="text" placeholder="Email" class="field-text")
+                            .form-group
+                                input(type="text" placeholder="Password" class="field-text")
+                        .auth-box-btns
+                            button.btn.btn-gradient Login

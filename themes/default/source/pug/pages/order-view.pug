@@ -1,0 +1,79 @@
+//- index.pug
+doctype html
+html(lang="en")
+    //- Include head
+    include ../layout/head.pug
+    body
+        //- Include header
+        include ../layout/header.pug
+
+        //- Include menu mobile
+        include ../layout/menu.pug
+
+        .container
+            .d-flex.flex-wrap.flex-justify-content-between.flex-align-items-center.flex-gap-3.m-t-5
+                h1 Order #5fc83
+
+            .order-view
+                .order-view-info
+                    .order-view-label Info
+                    .order-view-row
+                        .order-view-col Type
+                        .order-view-col
+                            .order-view-har Ultra Express Analysis
+                    .order-view-row
+                        .order-view-col Deadline
+                        .order-view-col
+                            .order-view-har Ultra Express
+                    .order-view-row
+                        .order-view-col Payment
+                        .order-view-col
+                            .order-view-har Not paid
+                    .order-view-row
+                        .order-view-col Status
+                        .order-view-col
+                            .order-view-har New
+                    .order-view-row
+                        .order-view-col Discount
+                        .order-view-col
+                            .order-view-har -
+                    br
+                    .order-view-label Order details
+                    .order-view-row
+                        .order-view-col Created
+                        .order-view-col
+                            .order-view-har 2024-10-16 07:40:36
+                    .order-view-row
+                        .order-view-col Client
+                        .order-view-col
+                            .order-view-har Mr. Deer
+                    .order-view-row
+                        .order-view-col Phone
+                        .order-view-col
+                            .order-view-har 209-721-7308
+                    .order-view-row
+                        .order-view-col Email
+                        .order-view-col
+                            .order-view-har info_mr_deer@gmail.com
+                    .order-view-row
+                        .order-view-col Comment
+                        .order-view-col
+                            .order-view-har Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    .order-view-row
+                        .order-view-col Total price
+                        .order-view-col
+                            .order-view-har USD 47.50
+                .order-view-side
+                    .order-view-side-row
+                        .label Total price
+                        .value $73.11
+                    .order-view-side-buts
+                        button.btn.btn-primary Pay now
+
+        br
+        br
+        br
+
+
+        //- Include footer
+        include ../layout/footer.pug

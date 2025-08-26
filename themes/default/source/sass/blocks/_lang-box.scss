@@ -1,0 +1,45 @@
+.lang-box {
+  position: relative;
+  &-left {
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 80px;
+    border: 1px solid $color-grey;
+    background-color: $color-grey;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0;
+    @media(max-width: #{$break-max-sm}) {
+      width: 40px;
+    }
+    &.active {
+      display: block;
+    }
+    li {
+      list-style: none;
+      a {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 5px;
+        color: $color-black;
+        &:hover {
+          background-color: #cccccc;
+          color: #000;
+          -webkit-transition: all 200ms linear;
+          transition: all 200ms linear;
+        }
+      }
+    }
+  }
+}

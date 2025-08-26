@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html(lang="en")
+    //- Include head
+    include ../layout/head.pug
+    body
+        //- Include header
+        include ../layout/header.pug
+
+        //- Include menu mobile
+        include ../layout/menu.pug
+
+        .container(style="padding-bottom: 50px;")
+            button.btn.btn-prev
+                include ../../../web/images/arrow-prev-white.svg
+                span Back
+            .d-flex.flex-wrap.flex-justify-content-between.flex-align-items-center.flex-gap-3.m-b-5
+                h1 My orders
+                a.btn.btn-primary Create new order
+
+            .list-view
+                .order-lists
+                    .order-list
+                        .order-list-info
+                            .order-list-info-head
+                                .order-list-info-number Order: #5fc83
+                            .order-list-info-main
+                                .order-list-info-col
+                                    .order-list-info-row
+                                        .label Date
+                                        .value 16.10.2024 07:40
+                                    .order-list-info-row
+                                        .label Status
+                                        .value New
+                                    .order-list-info-row
+                                        .label Deadline
+                                        .value Express
+                                    .order-list-info-row
+                                        .label Subject
+                                        .value Analysis
+                                    .order-list-info-row
+                                        .label Pages
+                                        .value 1
+                                .order-list-info-col
+                                    .order-list-info-row
+                                        .label Currency
+                                        .value USD
+                                    .order-list-info-row
+                                        .label  Payment
+                                        .value Not paid
+                                    .order-list-info-row
+                                        .label Total price
+                                        .value USD 47.50
+                            .order-list-info-foot
+                                button.btn.btn-primary.btn-small Pay now
+                                button.btn.btn-secondary.btn-small Details
+
+        //- Include footer
+        include ../layout/footer.pug

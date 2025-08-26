@@ -1,0 +1,57 @@
+/* EssayFlow Landing Prototype — styles.css */
+:root{
+  --bg:#000; --fg:#fff; --muted:#b7b7b7; --panel:#141414; --chip:#242424; --violet:#6a00eb;
+  --container:1320px; --pad:20px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif}
+.container{max-width:var(--container);margin:0 auto;padding:0 var(--pad)}
+.divider{height:1px;background:linear-gradient(90deg,rgba(255,255,255,.25),rgba(255,255,255,.05));opacity:.7}
+.divider--light{opacity:.25}
+
+/* Header */
+.site-header{position:sticky;top:0;background:#000;z-index:10}
+.header-row{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--fg);text-decoration:none}
+.brand-mark{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:6px;background:var(--fg);color:#000;font-weight:700}
+.brand-name{font-family:"Instrument Serif",serif;font-style:italic;font-size:28px;letter-spacing:.2px}
+.main-nav{display:flex;gap:18px}
+.main-nav a{color:var(--fg);text-decoration:none;opacity:.9}
+.main-nav a:hover{opacity:1}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.chip{appearance:none;border:0;background:var(--chip);color:var(--fg);padding:8px 14px;border-radius:10px;cursor:pointer;font-size:14px}
+.chip--ghost{background:transparent;border:1px solid rgba(255,255,255,.2)}
+.chip--violet{background:var(--violet)}
+
+/* Hero */
+.hero{position:relative}
+.hero-wrap{padding:64px 0 48px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px}
+.hero-title{margin:0;font-family:"Instrument Serif",serif;font-weight:400;font-size:110px;letter-spacing:-2px}
+.hero-sub{margin:0;color:var(--muted)}
+.hero-cta{display:flex;flex-direction:column;align-items:center;gap:14px;max-width:720px}
+.btn{display:inline-block;text-decoration:none;color:#fff;padding:12px 22px;border-radius:10px;border:1px solid rgba(255,255,255,.15)}
+.btn-ghost{background:transparent}
+.btn-gradient{border:0;background:radial-gradient(circle at 0% 0%,#ffff00 0%,#fdc500 12%,#fa8c00 24%,#f85200 36%,#f61700 49%,#e3171d 56%,#d3123b 62%,#b10f73 72%,#8d06b0 82%,#6a00eb 100%)}
+.legal{margin:0;color:var(--muted);font-size:14px}
+.legal a{color:#fff}
+
+/* Footer */
+.site-footer{padding:24px 0 40px;color:var(--muted);text-align:center}
+
+/* Responsive */
+@media (max-width: 1024px){
+  .hero-title{font-size:88px}
+}
+@media (max-width: 768px){
+  .header-row{flex-wrap:wrap}
+  .main-nav{order:3;width:100%;justify-content:center;padding-top:6px}
+  .actions{order:2}
+  .hero-title{font-size:60px}
+}
+@media (max-width: 420px){
+  .brand-name{font-size:24px}
+  .chip{padding:7px 12px}
+  .hero-wrap{padding:44px 0 32px}
+  .hero-title{font-size:44px}
+}

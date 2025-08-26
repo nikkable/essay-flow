@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Essayonara</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/main.min.js" defer></script>
+  </head>
+  <body>
+    <div class="p-5">
+      <h2>Colors</h2>
+      <div class="d-flex flex-wrap flex-gap-2 m-b-1">
+        <div class="color-ui-box color-ui-box-1"></div>
+        <div class="color-ui-box color-ui-box-2"></div>
+        <div class="color-ui-box color-ui-box-3"></div>
+        <div class="color-ui-box color-ui-box-4"></div>
+        <div class="color-ui-box color-ui-box-5"></div>
+        <div class="color-ui-box color-ui-box-6"></div>
+        <div class="color-ui-box color-ui-box-7"></div>
+        <div class="color-ui-box color-ui-box-8"></div>
+        <div class="color-ui-box color-ui-box-9"></div>
+      </div>
+      <div class="d-flex flex-wrap flex-gap-2 m-b-5">
+        <div class="color-ui-box color-ui-box-10"></div>
+        <div class="color-ui-box color-ui-box-11"></div>
+        <div class="color-ui-box color-ui-box-12"></div>
+        <div class="color-ui-box color-ui-box-13"></div>
+        <div class="color-ui-box color-ui-box-14"></div>
+        <div class="color-ui-box color-ui-box-15"></div>
+        <div class="color-ui-box color-ui-box-16"></div>
+        <div class="color-ui-box color-ui-box-17"></div>
+        <div class="color-ui-box color-ui-box-18"></div>
+      </div>
+      <h2>Typography</h2>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-5">
+        <div>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+        </div>
+        <div>
+          <div class="text-size-1 m-b-2">Paragraph 16</div>
+          <div class="text-size-2 m-b-2">Paragraph 14</div>
+          <div class="text-size-3 m-b-2">Paragraph 12</div>
+          <div class="text-size-4 m-b-2">Paragraph 10</div>
+          <div class="text-size-5">Paragraph 8</div>
+        </div>
+      </div>
+      <h2>Buttons</h2>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-5">
+        <div>
+          <h5>Normal</h5>
+          <button class="btn btn-three">Claim</button>
+          <button class="btn btn-primary">Claim</button>
+          <button class="btn btn-secondary">Claim</button>
+          <button class="btn btn-five">Claim</button>
+        </div>
+        <div>
+          <h5>Disabled</h5>
+          <button class="btn btn-three" disabled>Claim</button>
+          <button class="btn btn-primary" disabled>Claim</button>
+          <button class="btn btn-secondary disabled">Claim</button>
+          <button class="btn btn-five disabled">Claim</button>
+        </div>
+      </div>
+      <h2>Input/Dropdown</h2>
+      <div class="row m-b-3">
+        <div class="col-2">
+          <h5>Normal</h5>
+          <div class="form-group-transform">
+            <input class="field-text" type="text" placeholder=" " id="email">
+            <label class="field-label" for="email">Your email</label>
+          </div>
+        </div>
+        <div class="col-2">
+          <h5>Filled</h5>
+          <div class="form-group-transform">
+            <input class="field-text" type="text" placeholder=" " value="Mail@mail.com" id="email2">
+            <label class="field-label" for="email2">Your email</label>
+          </div>
+        </div>
+        <div class="col-2">
+          <h5>Disabled</h5>
+          <input class="field-text" type="text" placeholder="Your email" disabled>
+        </div>
+        <div class="col-2">
+          <h5>Error</h5>
+          <div class="form-group-transform">
+            <input class="field-text field-error" type="text" placeholder=" " id="email3">
+            <label class="field-label" for="email3">Your email</label>
+          </div>
+          <div class="field-error-text">Error message</div>
+        </div>
+      </div>
+      <div class="row m-b-3">
+        <div class="col-2">
+          <div class="form-group form-group-relate form-group-transform">
+            <input class="field-text" type="text" placeholder=" " id="search">
+            <label class="field-label" for="search">Search</label>
+            <button class="field-text-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.0625 15.625C12.6869 15.625 15.625 12.6869 15.625 9.0625C15.625 5.43813 12.6869 2.5 9.0625 2.5C5.43813 2.5 2.5 5.43813 2.5 9.0625C2.5 12.6869 5.43813 15.625 9.0625 15.625Z" stroke="#9097A8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.7031 13.7031L17.5 17.5" stroke="#9097A8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </button>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="form-group form-group-relate form-group-transform">
+            <input class="field-text" type="text" placeholder=" " value="Admin" id="search2">
+            <label class="field-label" for="search2">Search</label>
+            <button class="field-text-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.0625 15.625C12.6869 15.625 15.625 12.6869 15.625 9.0625C15.625 5.43813 12.6869 2.5 9.0625 2.5C5.43813 2.5 2.5 5.43813 2.5 9.0625C2.5 12.6869 5.43813 15.625 9.0625 15.625Z" stroke="#9097A8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.7031 13.7031L17.5 17.5" stroke="#9097A8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </button>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="form-group form-group-relate">
+            <input class="field-text" type="text" placeholder="Search" disabled>
+            <button class="field-text-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.0625 15.625C12.6869 15.625 15.625 12.6869 15.625 9.0625C15.625 5.43813 12.6869 2.5 9.0625 2.5C5.43813 2.5 2.5 5.43813 2.5 9.0625C2.5 12.6869 5.43813 15.625 9.0625 15.625Z" stroke="#9097A8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.7031 13.7031L17.5 17.5" stroke="#9097A8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row m-b-3">
+        <div class="col-2">
+          <div class="field-dropdown">
+            <div class="field-dropdown-selected">
+              <input class="field-text" type="text" placeholder="All status">
+              <!--include ../../icons/arrow-down.svg-->
+            </div>
+            <div class="field-dropdown-options">
+              <button class="field-dropdown-option">Menu item</button>
+              <button class="field-dropdown-option">Menu item</button>
+              <button class="field-dropdown-option">Menu item</button>
+              <button class="field-dropdown-option">Menu item</button>
+              <div class="hr"></div>
+              <button class="field-dropdown-option">Menu item</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="field-dropdown field-dropdown--nohover field-dropdown--show">
+            <div class="field-dropdown-selected field-dropdown-selected--disable form-group-transform">
+              <input class="field-text" type="text" placeholder=" " value="All status" id="status" disabled>
+              <label class="field-label" for="status">Status</label>
+              <!--include ../../icons/arrow-down.svg-->
+            </div>
+            <div class="field-dropdown-options">
+              <button class="field-dropdown-option">Menu item</button>
+              <button class="field-dropdown-option">Menu item</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-b-5"></div>
+      <div class="row m-b-5"></div>
+      <h2>Radio</h2>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-3">
+        <div class="field-radio">
+          <input type="radio" id="radio1" name="radio1">
+          <label for="radio1">Text</label>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-3">
+        <div class="field-radio">
+          <input type="radio" id="radio2-1" name="radio" value="1">
+          <label for="radio2-1">Text 1</label>
+        </div>
+        <div class="field-radio">
+          <input type="radio" id="radio2-2" name="radio" value="2" checked>
+          <label for="radio2-2">Text 2</label>
+        </div>
+        <div class="field-radio">
+          <input type="radio" id="radio2-3" name="radio" value="3">
+          <label for="radio2-3">Text 3</label>
+        </div>
+        <div class="field-radio">
+          <input type="radio" id="radio2-4" name="radio" value="4">
+          <label for="radio2-4">Text 4</label>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-5">
+        <div class="field-radio">
+          <input type="radio" id="radio3" value="1" disabled>
+          <label for="radio3">Text</label>
+        </div>
+        <div class="field-radio">
+          <input type="radio" id="radio4" value="1" checked disabled>
+          <label for="radio4">Text</label>
+        </div>
+      </div>
+      <h2>Checkbox</h2>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-3">
+        <div class="field-checkbox">
+          <input type="checkbox" id="checkbox1">
+          <label for="checkbox1">Label</label>
+        </div>
+        <div class="field-checkbox">
+          <input type="checkbox" id="checkbox2" checked>
+          <label for="checkbox2">Label</label>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-5">
+        <div class="field-checkbox">
+          <input type="checkbox" id="checkbox3" checked disabled>
+          <label for="checkbox3">Label</label>
+        </div>
+        <div class="field-checkbox">
+          <input type="checkbox" id="checkbox4">
+          <label for="checkbox4"></label>
+        </div>
+      </div>
+      <h2>Message</h2>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-5">
+        <div class="message message-success">
+          <!--include ../../icons/info.svg--><span>Message</span>
+        </div>
+        <div class="message message-warn">
+          <!--include ../../icons/info.svg--><span>Message</span>
+        </div>
+        <div class="message message-error">
+          <!--include ../../icons/info.svg--><span>Message</span>
+        </div>
+        <div class="message message-info">
+          <!--include ../../icons/info.svg--><span>Message</span>
+        </div>
+      </div>
+      <h2>Other</h2>
+      <div class="d-flex flex-wrap flex-gap-1 m-b-5">
+        <div class="calendar">
+          <div class="calendar-head">
+            <div class="calendar-title">December, 2024</div>
+            <div class="calendar-arrows">
+              <button class="calendar-arrow disabled">
+                <!--include ../../icons/arrow-left.svg-->
+              </button>
+              <button class="calendar-arrow">
+                <!--include ../../icons/arrow-right.svg-->
+              </button>
+            </div>
+          </div>
+          <div class="calendar-main">
+            <div class="calendar-days-name">
+              <div class="calendar-day-name">Пн</div>
+              <div class="calendar-day-name">Вт</div>
+              <div class="calendar-day-name">Ср</div>
+              <div class="calendar-day-name">Чт</div>
+              <div class="calendar-day-name">Пт</div>
+              <div class="calendar-day-name">Сб</div>
+              <div class="calendar-day-name">Вс</div>
+            </div>
+            <div class="calendar-days">
+              <button class="calendar-day">1</button>
+              <button class="calendar-day">2</button>
+              <button class="calendar-day">3</button>
+              <button class="calendar-day">4</button>
+              <button class="calendar-day">5</button>
+              <button class="calendar-day">6</button>
+              <button class="calendar-day">7</button>
+              <button class="calendar-day">8</button>
+              <button class="calendar-day">9</button>
+              <button class="calendar-day">10</button>
+              <button class="calendar-day">11</button>
+              <button class="calendar-day">12</button>
+              <button class="calendar-day">13</button>
+              <button class="calendar-day">14</button>
+              <button class="calendar-day">15</button>
+              <button class="calendar-day">16</button>
+              <button class="calendar-day">17</button>
+              <button class="calendar-day">18</button>
+              <button class="calendar-day">19</button>
+              <button class="calendar-day calendar-day--done calendar-day--start">20</button>
+              <button class="calendar-day calendar-day--done">21</button>
+              <button class="calendar-day calendar-day--done">22</button>
+              <button class="calendar-day calendar-day--done">23</button>
+              <button class="calendar-day calendar-day--done">24</button>
+              <button class="calendar-day calendar-day--done calendar-day--end">25</button>
+              <button class="calendar-day">26</button>
+              <button class="calendar-day">27</button>
+              <button class="calendar-day">28</button>
+              <button class="calendar-day">29</button>
+              <button class="calendar-day">30</button>
+              <button class="calendar-day">1</button>
+              <button class="calendar-day">2</button>
+              <button class="calendar-day calendar-day--today">3</button>
+              <button class="calendar-day">4</button>
+              <button class="calendar-day">5</button>
+              <button class="calendar-day calendar-day--disabled">6</button>
+              <button class="calendar-day calendar-day--disabled">7</button>
+              <button class="calendar-day calendar-day--disabled">8</button>
+              <button class="calendar-day calendar-day--disabled">9</button>
+              <button class="calendar-day calendar-day--disabled">10</button>
+              <button class="calendar-day calendar-day--disabled">11</button>
+              <button class="calendar-day calendar-day--disabled">12</button>
+            </div>
+          </div>
+          <div class="calendar-foot">
+            <button class="btn btn-primary">Accept</button>
+          </div>
+        </div>
+        <div style="max-width: 200px;width: 100%;">
+          <div class="field-dropdown-options">
+            <div class="field-checkbox field-dropdown-checkbox">
+              <input type="checkbox" id="item1">
+              <label for="item1">Menu item</label>
+            </div>
+            <div class="field-checkbox field-dropdown-checkbox">
+              <input type="checkbox" id="item2" checked>
+              <label for="item2">Menu item</label>
+            </div>
+            <div class="hr"></div>
+            <button class="field-dropdown-option field-dropdown-option--radius">Select all</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

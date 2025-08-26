@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    body {
+        background: #000;
+    }
+</style>
+<canvas id="rayCanvas" width="800" height="800" style="background-color: black;"></canvas>
+
+<script>
+    const canvas = document.getElementById('rayCanvas');
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+
+    // Две центральные точки
+    const topCenter = { x: width / 2, y: height / 4 };
+    const bottomCenter = { x: width / 2, y: height * 3 / 4 };
+
+    // Функция для рисования лучей
+    function drawRays(center, numRays, length, startAngle = 0, endAngle = Math.PI * 2) {
+        ctx.strokeStyle = '#fff'; // Цвет лучей
+        ctx.lineWidth = 1; // Толщина лучей
+        ctx.setLineDash([3, 2]); // Пунктирная линия
+
+        const angleStep = (endAngle - startAngle) / (numRays - 1);
+
+        for (let i = 0; i < numRays; i++) {
+            const angle = startAngle + (angleStep * i);
+
+            ctx.beginPath();
+            ctx.moveTo(center.x, center.y);
+            const endX = center.x + Math.cos(angle) * length;
+            const endY = center.y + Math.sin(angle) * length;
+            ctx.lineTo(endX, endY);
+            ctx.stroke();
+        }
+    }
+
+    // Рисуем обе группы лучей
+    drawRays(topCenter, 9, 250, -0.2, Math.PI * -1); // Верхняя группа
+    drawRays(bottomCenter, 16, 250); // Нижняя группа
+</script>
+</body>
+</html>

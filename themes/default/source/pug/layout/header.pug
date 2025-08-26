@@ -1,0 +1,42 @@
+header.header.header--home
+    .container
+        .header-main
+            a(href="/").header-logo
+                include ../../../web/images/logo.svg
+            .header-menu
+                ul
+                    li
+                        a(href="#") Orders
+                    li
+                        a(href="#") Profile
+                    li
+                        a(href="#") Contacts
+            .header-langs
+                .lang
+                    .lang-box.js-lang-box
+                        .lang-box-left.btn.btn-secondary.btn-small
+                            span EN
+                            include ../../../web/images/arrow.svg
+                        ul
+                            li
+                                a(href="#") EN
+                            li
+                                a(href="#") DE
+                            li
+                                a(href="#") PT
+                .lang
+                    .lang-box.js-lang-box
+                        .lang-box-left.btn.btn-secondary.btn-small
+                            span EUR
+                            include ../../../web/images/arrow.svg
+                        ul
+                            li
+                                a(href="#") EUR
+                            li
+                                a(href="#") USD
+            .header-buttons
+                button.btn.btn-secondary.btn-small Get started
+                button.btn.btn-secondary.btn-small Am author
+                button.btn.btn-primary.btn-small Login
+            button.btn.header-app.js-header-app
+                include ../../../web/images/app.svg

@@ -1,0 +1,40 @@
+<?php
+Yii::import('application.modules.other.OtherModule');
+/**
+ * Форма смены пароля
+ *
+ * @category YupeComponents
+ * @package  yupe.modules.user.forms
+ * @author   YupeTeam <support@yupe.ru>
+ * @license  BSD http://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F_BSD
+ * @version  0.5.3
+ * @link     https://yupe.ru
+ *
+ **/
+class ChangePasswordForm extends CFormModel
+{
+    public $password;
+    public $cPassword;
+
+    public function rules()
+    {
+        return [
+            ['password, cPassword', 'required'],
+            ['password, cPassword', 'length', 'min' => Yii::app()->getModule('user')->minPasswordLength],
+            [
+                'password',
+                'compare',
+                'compareAttribute' => 'cPassword',
+                'message'          => Yii::t('OtherModule.other', 'Password is not coincide!')
+            ]
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'password'  => Yii::t('OtherModule.other', 'New password'),
+            'cPassword' => Yii::t('OtherModule.other', 'Confirm new password'),
+        ];
+    }
+}

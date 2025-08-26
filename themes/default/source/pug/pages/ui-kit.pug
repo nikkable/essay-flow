@@ -1,0 +1,253 @@
+//- index.pug
+doctype html
+html(lang="en")
+    //- Include head
+    include ../layout/head.pug
+    body
+        .p-5
+            h2 Colors
+            .d-flex.flex-wrap.flex-gap-2.m-b-1
+                .color-ui-box.color-ui-box-1
+                .color-ui-box.color-ui-box-2
+                .color-ui-box.color-ui-box-3
+                .color-ui-box.color-ui-box-4
+                .color-ui-box.color-ui-box-5
+                .color-ui-box.color-ui-box-6
+                .color-ui-box.color-ui-box-7
+                .color-ui-box.color-ui-box-8
+                .color-ui-box.color-ui-box-9
+            .d-flex.flex-wrap.flex-gap-2.m-b-5
+                .color-ui-box.color-ui-box-10
+                .color-ui-box.color-ui-box-11
+                .color-ui-box.color-ui-box-12
+                .color-ui-box.color-ui-box-13
+                .color-ui-box.color-ui-box-14
+                .color-ui-box.color-ui-box-15
+                .color-ui-box.color-ui-box-16
+                .color-ui-box.color-ui-box-17
+                .color-ui-box.color-ui-box-18
+
+            h2 Typography
+            .d-flex.flex-wrap.flex-gap-1.m-b-5
+                div
+                    h1 Heading 1
+                    h2 Heading 2
+                    h3 Heading 3
+                    h4 Heading 4
+                    h5 Heading 5
+                div
+                    .text-size-1.m-b-2 Paragraph 16
+                    .text-size-2.m-b-2 Paragraph 14
+                    .text-size-3.m-b-2 Paragraph 12
+                    .text-size-4.m-b-2 Paragraph 10
+                    .text-size-5 Paragraph 8
+            h2 Buttons
+            .d-flex.flex-wrap.flex-gap-1.m-b-5
+                div
+                    h5 Normal
+                    button.btn.btn-three Claim
+                    button.btn.btn-primary Claim
+                    button.btn.btn-secondary Claim
+                    button.btn.btn-five Claim
+                div
+                    h5 Disabled
+                    button(disabled).btn.btn-three Claim
+                    button(disabled).btn.btn-primary Claim
+                    button.btn.btn-secondary.disabled Claim
+                    button.btn.btn-five.disabled Claim
+            h2 Input/Dropdown
+            .row.m-b-3
+                .col-2
+                    h5 Normal
+                    .form-group-transform
+                        input(type="text" placeholder=" " id="email").field-text
+                        label(for="email").field-label Your email
+                .col-2
+                    h5 Filled
+                    .form-group-transform
+                        input(type="text" placeholder=" " value="Mail@mail.com" id="email2").field-text
+                        label(for="email2").field-label Your email
+                .col-2
+                    h5 Disabled
+                    input(type="text" placeholder="Your email" disabled).field-text
+                .col-2
+                    h5 Error
+                    .form-group-transform
+                        input(type="text" placeholder=" " id="email3").field-text.field-error
+                        label(for="email3").field-label Your email
+                    .field-error-text Error message
+            .row.m-b-3
+                .col-2
+                    .form-group.form-group-relate.form-group-transform
+                        input.field-text(type='text' placeholder=' ' id="search")
+                        label(for="search").field-label Search
+                        button.field-text-button
+                            include ../../icons/search.svg
+                .col-2
+                    .form-group.form-group-relate.form-group-transform
+                        input.field-text(type='text' placeholder=' ' value="Admin" id="search2")
+                        label(for="search2").field-label Search
+                        button.field-text-button
+                            include ../../icons/search.svg
+                .col-2
+                    .form-group.form-group-relate
+                        input.field-text(type='text' placeholder='Search' disabled)
+                        button.field-text-button
+                            include ../../icons/search.svg
+            .row.m-b-3
+                .col-2
+                    .field-dropdown
+                        .field-dropdown-selected
+                            input(type="text" placeholder="All status").field-text
+                            //include ../../icons/arrow-down.svg
+                        .field-dropdown-options
+                            button.field-dropdown-option Menu item
+                            button.field-dropdown-option Menu item
+                            button.field-dropdown-option Menu item
+                            button.field-dropdown-option Menu item
+                            .hr
+                            button.field-dropdown-option Menu item
+                .col-2
+                    .field-dropdown.field-dropdown--nohover.field-dropdown--show
+                        .field-dropdown-selected.field-dropdown-selected--disable.form-group-transform
+                            input(type="text" placeholder=" " value="All status" id="status" disabled).field-text
+                            label(for="status").field-label Status
+                            //include ../../icons/arrow-down.svg
+                        .field-dropdown-options
+                            button.field-dropdown-option Menu item
+                            button.field-dropdown-option Menu item
+            .row.m-b-5
+            .row.m-b-5
+
+            h2 Radio
+            .d-flex.flex-wrap.flex-gap-1.m-b-3
+                .field-radio
+                    input(type="radio" id="radio1" name="radio1")
+                    label(for="radio1") Text
+            .d-flex.flex-wrap.flex-gap-1.m-b-3
+                .field-radio
+                    input(type="radio" id="radio2-1" name="radio" value="1")
+                    label(for="radio2-1") Text 1
+                .field-radio
+                    input(type="radio" id="radio2-2" name="radio" value="2" checked)
+                    label(for="radio2-2") Text 2
+                .field-radio
+                    input(type="radio" id="radio2-3" name="radio" value="3")
+                    label(for="radio2-3") Text 3
+                .field-radio
+                    input(type="radio" id="radio2-4" name="radio" value="4")
+                    label(for="radio2-4") Text 4
+            .d-flex.flex-wrap.flex-gap-1.m-b-5
+                .field-radio
+                    input(type="radio" id="radio3" value="1" disabled)
+                    label(for="radio3") Text
+                .field-radio
+                    input(type="radio" id="radio4" value="1" checked disabled)
+                    label(for="radio4") Text
+
+            h2 Checkbox
+            .d-flex.flex-wrap.flex-gap-1.m-b-3
+                .field-checkbox
+                    input(type="checkbox" id="checkbox1")
+                    label(for="checkbox1") Label
+                .field-checkbox
+                    input(type="checkbox" id="checkbox2" checked)
+                    label(for="checkbox2") Label
+            .d-flex.flex-wrap.flex-gap-1.m-b-5
+                .field-checkbox
+                    input(type="checkbox" id="checkbox3" checked disabled)
+                    label(for="checkbox3") Label
+                .field-checkbox
+                    input(type="checkbox" id="checkbox4")
+                    label(for="checkbox4")
+
+            h2 Message
+            .d-flex.flex-wrap.flex-gap-1.m-b-5
+                .message.message-success
+                    //include ../../icons/info.svg
+                    span Message
+                .message.message-warn
+                    //include ../../icons/info.svg
+                    span Message
+                .message.message-error
+                    //include ../../icons/info.svg
+                    span Message
+                .message.message-info
+                    //include ../../icons/info.svg
+                    span Message
+            h2 Other
+            .d-flex.flex-wrap.flex-gap-1.m-b-5
+                .calendar
+                    .calendar-head
+                        .calendar-title December, 2024
+                        .calendar-arrows
+                            button.calendar-arrow.disabled
+                                //include ../../icons/arrow-left.svg
+                            button.calendar-arrow
+                                //include ../../icons/arrow-right.svg
+                    .calendar-main
+                        .calendar-days-name
+                            .calendar-day-name Пн
+                            .calendar-day-name Вт
+                            .calendar-day-name Ср
+                            .calendar-day-name Чт
+                            .calendar-day-name Пт
+                            .calendar-day-name Сб
+                            .calendar-day-name Вс
+                        .calendar-days
+                            button.calendar-day 1
+                            button.calendar-day 2
+                            button.calendar-day 3
+                            button.calendar-day 4
+                            button.calendar-day 5
+                            button.calendar-day 6
+                            button.calendar-day 7
+                            button.calendar-day 8
+                            button.calendar-day 9
+                            button.calendar-day 10
+                            button.calendar-day 11
+                            button.calendar-day 12
+                            button.calendar-day 13
+                            button.calendar-day 14
+                            button.calendar-day 15
+                            button.calendar-day 16
+                            button.calendar-day 17
+                            button.calendar-day 18
+                            button.calendar-day 19
+                            button.calendar-day.calendar-day--done.calendar-day--start 20
+                            button.calendar-day.calendar-day--done 21
+                            button.calendar-day.calendar-day--done 22
+                            button.calendar-day.calendar-day--done 23
+                            button.calendar-day.calendar-day--done 24
+                            button.calendar-day.calendar-day--done.calendar-day--end 25
+                            button.calendar-day 26
+                            button.calendar-day 27
+                            button.calendar-day 28
+                            button.calendar-day 29
+                            button.calendar-day 30
+                            button.calendar-day 1
+                            button.calendar-day 2
+                            button.calendar-day.calendar-day--today 3
+                            button.calendar-day 4
+                            button.calendar-day 5
+                            button.calendar-day.calendar-day--disabled 6
+                            button.calendar-day.calendar-day--disabled 7
+                            button.calendar-day.calendar-day--disabled 8
+                            button.calendar-day.calendar-day--disabled 9
+                            button.calendar-day.calendar-day--disabled 10
+                            button.calendar-day.calendar-day--disabled 11
+                            button.calendar-day.calendar-day--disabled 12
+                    .calendar-foot
+                        button.btn.btn-primary Accept
+
+                div(style="max-width: 200px;width: 100%;")
+                    .field-dropdown-options
+                        .field-checkbox.field-dropdown-checkbox
+                            input(type="checkbox" id="item1")
+                            label(for="item1") Menu item
+
+                        .field-checkbox.field-dropdown-checkbox
+                            input(type="checkbox" id="item2" checked)
+                            label(for="item2") Menu item
+                        .hr
+                        button.field-dropdown-option.field-dropdown-option--radius Select all

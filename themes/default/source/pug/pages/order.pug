@@ -1,0 +1,102 @@
+//- index.pug
+doctype html
+html(lang="en")
+    //- Include head
+    include ../layout/head.pug
+    body
+        //- Include header
+        include ../layout/header.pug
+
+        //- Include menu mobile
+        include ../layout/menu.pug
+
+        .container
+            .cart
+                .cart-head
+                    button.btn.btn-prev
+                        include ../../../web/images/arrow-prev.svg
+                        span Back
+                    h1 Place new order
+                .cart-main
+                    .cart-info
+                        .cart-form
+                            .cart-periods
+                                .cart-period.js-cart-period.active
+                                    .cart-period-main
+                                        .cart-period-title Ultra Express
+                                        .cart-period-time 48 hours
+                                    .cart-period-foot
+                                        .cart-period-desc Order delivery within 48 hours from task acceptance.
+                                .cart-period.js-cart-period
+                                    .cart-period-main
+                                        .cart-period-title Express
+                                        .cart-period-time 5 days
+                                    .cart-period-foot
+                                        .cart-period-desc Order delivery within 5 days from task acceptance.
+                                .cart-period.js-cart-period
+                                    .cart-period-main
+                                        .cart-period-title Standard
+                                        .cart-period-time 10 days
+                                    .cart-period-foot
+                                        .cart-period-desc Order delivery within 10 days from task acceptance.
+                            .row
+                                .col-6
+                                    .form-group
+                                        label Subject
+                                        .field-selected-wrap
+                                            select.field-selected.js-input-subject
+                                                option Analysis
+                                .col-6
+                                    .form-group
+                                        label Number of pages
+                                        .field-selected-wrap
+                                            select.field-selected.js-input-word
+                                                option 1
+                            .form-group
+                                label Language
+                                .field-selected-wrap
+                                    select.field-selected.js-input-word
+                                        option 1
+                            .form-group
+                                label Order description
+                                textarea.field-textarea.form-control
+                            .form-group
+                                label Name *
+                                input.field-text.form-control
+                            .row
+                                .col-6
+                                    .form-group
+                                        label Email *
+                                        input.field-text.form-control
+                                .col-6
+                                    .form-group
+                                        label Phone
+                                        input.field-text.form-control
+                    .cart-total
+                        .cart-total-title Total
+                        .js-cart-total-har
+                            .cart-total-har
+                                .cart-total-har-label Total price:
+                                .cart-total-har-value Ultra Express
+                            .cart-total-har
+                                .cart-total-har-label Subject:
+                                .cart-total-har-value Analysis
+                            .cart-total-har
+                                .cart-total-har-label Number of pages:
+                                .cart-total-har-value 1
+                        .cart-total-coupon.coupons
+                            label Enter the promo code
+                            input.field-text
+                        .cart-total-price
+                            .cart-total-price-label Total price
+                            .cart-total-price-value.js-total-price EUR 33.00
+                        .cart-total-buts
+                            button.btn.btn-primary Order now
+                        .cart-total-agree
+                            .form-group.d-flex.flex-align-items-center.flex-gap-3
+                                input(type="checkbox" id="cart-total-agree")
+                                label(for="cart-total-agree") I confirm my acceptance of <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+
+
+        //- Include footer
+        include ../layout/footer.pug

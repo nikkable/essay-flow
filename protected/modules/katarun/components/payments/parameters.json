@@ -1,0 +1,17 @@
+{
+    "name": "Katarun",
+    "settings": [
+        {
+            "variable": "brand_id",
+            "name": "Brand Id"
+        },
+        {
+            "variable": "api_key",
+            "name": "Api key"
+        },
+        {
+            "variable": "endpoint",
+            "name": "Endpoint (https://gate.katarun.com/api/v1/)"
+        }
+    ]
+}
