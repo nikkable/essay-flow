@@ -34,7 +34,9 @@ $this->description = !empty($page->meta_description) ? $page->meta_description :
     </div>
 </div>
 
+<!--
 <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'every-two', 'view' => 'every-two']); ?>
+-->
 
 <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted-two', 'view' => 'trusted-two']); ?>
 
