@@ -169,7 +169,7 @@ const ready = function () {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-PTBGZCEJRW');
+        gtag('config', 'G-S279PHFZ6W');
     }
 
     // Функция для отключения Google Analytics

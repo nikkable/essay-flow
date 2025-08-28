@@ -8,8 +8,8 @@ return [
     'orderSymbol' => 'EB',
     'orderNumber' => 3900,
 
-    'key'        => '6LcrH6wrAAAAAO_Tub0z48xVmY6Qq3fYxHrnOTUx',
-    'secretkey'  => '6LcrH6wrAAAAABYog9-WFf5GXLCTf49bTgFdYdFK',
+    'key'        => '6LeVkrUrAAAAAD-F8aex6GU7UUsBEE62MDzQit_r',
+    'secretkey'  => '6LeVkrUrAAAAAM9aOwu84wQz8nK-WwC3Z6kGCyiz',
 
     'telegramToken' =>  '7255781798:AAGjVGTsWYn3dybnL9e9IbcdrEMX9RNMAr8',
     'telegramChatId' =>  '-1002251539005',
