@@ -1,16 +1,9 @@
 <?php if($block): ?>
     <div class="order-home-head">
-        <div class="order-home-title title">See Your Price in Seconds — Fast, Fair & Flexible</div>
-        <div class="order-home-desc desc">Budget-friendly or premium rush? Adjust your preferences and see the cost in real time. 100% transparent.</div>
+        <div class="order-home-title title"><?= $block->content; ?></div>
+        <div class="order-home-desc desc"><?= $block->content2; ?></div>
     </div>
     <div class="order-home-main">
-        <!--
-        <div class="order-home-title-top">
-            <?= file_get_contents(Yii::app()->theme->basePath . '/web/images/stars.svg') ?>
-        </div>
-        <div class="order-home-title title title--words" data-aos="fade-right"><?= $block->content; ?></div>
-        <div class="order-home-desc" data-aos="fade-right"><?= $block->content2; ?></div>
-        -->
         <div class="order-home-form">
             <input class="js-input-page" type="hidden" value="<?= Yii::app()->getModule('rackcalc')->pricePage; ?>">
 
@@ -52,7 +45,7 @@
             </div>
         </div>
 
-        <div class="screen-text screen-text--1"><span class="label">Your profile</span><span class="value">Students</span><span class="value">Applicants</span><span class="value">Postgraduate students</span><span class="value">Researchers</span><span class="value">Teachers</span><span class="value">Bloggers</span><span class="value">Copywriters</span><span class="value">Marketers</span></div>
-        <div class="screen-text screen-text--2"><span class="label">Your benefits</span><span class="value">Productive</span><span class="value">Stylish</span><span class="value">Neat&fast</span><span class="value">Comfortable</span><span class="value">Convenient</span><span class="value">High-quality</span><span class="value">Reliable</span><span class="value">Professional</span></div>
+        <div class="screen-text screen-text--1"><?= $block->content3; ?></div>
+        <div class="screen-text screen-text--2"><?= $block->content4; ?></div>
     </div>
 <?php endif; ?>

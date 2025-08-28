@@ -29,7 +29,7 @@ return [
     // Default controller
     'defaultController' => 'site',
     // Application name
-    'name' => 'EssaysBuddy',
+    'name' => 'EssayFlow',
     // Default language
     'language' => 'en',
     'sourceLanguage' => 'en',

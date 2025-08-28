@@ -18,13 +18,13 @@ $this->description = !empty($page->meta_description) ? $page->meta_description :
 
 <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'every', 'view' => 'every']); ?>
 
-<?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'screen', 'view' => 'trusted']); ?>
+<?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted', 'view' => 'trusted']); ?>
 
-<?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'screen', 'view' => 'our']); ?>
+<?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'our', 'view' => 'our']); ?>
 
 <div class="bg">
     <div class="container">
-        <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'screen', 'view' => 'every-black']); ?>
+        <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'every-black', 'view' => 'every-black']); ?>
 
         <?php if(!Yii::app()->user->checkAccess('author')): ?>
             <div class="order-home">
@@ -34,62 +34,9 @@ $this->description = !empty($page->meta_description) ? $page->meta_description :
     </div>
 </div>
 
-<?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'every', 'view' => 'every']); ?>
+<?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'every-two', 'view' => 'every-two']); ?>
 
-<!--
-<div class="every">
-    <div class="container">
-        <div class="every-head">
-            <div class="every-col">
-                <div class="every-desc">From disruptive startups to industry leaders, our community thrives on one shared principle: exceptional communication drives extraordinary results.</div>
-            </div>
-            <div class="every-col">
-                <div class="every-title title title--words"><span class="text-bg"><span>Be part</span><span>of the movement</span></span><span>that refuses</span><span>to settle</span><span>for ‘good enough’.</span></div>
-            </div>
-        </div>
-        <div class="every-main">
-            <div class="every-item">
-                <div class="every-item-col">
-                    <div class="every-item-label">01</div>
-                </div>
-                <div class="every-item-col">
-                    <div class="every-item-title">Elite Networking</div>
-                    <div class="every-item-desc">Gain exclusive access to forums, events, and collaborations with fellow members pushing boundaries in your industry.</div>
-                </div>
-            </div>
-            <div class="every-item">
-                <div class="every-item-col">
-                    <div class="every-item-label">02</div>
-                </div>
-                <div class="every-item-col">
-                    <div class="every-item-title">First-to-Know Perks</div>
-                    <div class="every-item-desc">Be the first to test new features, get premium discounts, and shape future services through private feedback rounds.</div>
-                </div>
-            </div>
-            <div class="every-item">
-                <div class="every-item-col">
-                    <div class="every-item-label">03</div>
-                </div>
-                <div class="every-item-col">
-                    <div class="every-item-title">Success Templates</div>
-                    <div class="every-item-desc">Unlock proven frameworks, pitch decks, and content blueprints from top performers in our network.</div>
-                </div>
-            </div>
-            <div class="every-item">
-                <div class="every-item-col">
-                    <div class="every-item-label">04</div>
-                </div>
-                <div class="every-item-col">
-                    <div class="every-item-title">Success Templates</div>
-                    <div class="every-item-desc">Access battle-tested templates, swipe files, and case studies from top performers in your field.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
-
-<?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'screen', 'view' => 'trusted-two']); ?>
+<?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted-two', 'view' => 'trusted-two']); ?>
 
 <div class="question" id="faq">
     <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'questions', 'view' => 'question']); ?>

@@ -17,11 +17,11 @@
             </div>
             <div class="footer-main-col">
                 <div class="footer-perms">
-                    <div><a href="mailto:whatsup@essaysbuddy.com">whatsup@essaysbuddy.com</a></div>
+                    <div><a href="mailto:info@essay-flow.com">info@essay-flow.com</a></div>
                     <div class="footer-perm">
                         <a href="<?= Yii::app()->createUrl('/page/page/view', ['slug' => 'terms-and-conditions']); ?>"><?= Yii::t('OtherModule.other', 'Terms And Conditions'); ?></a> | <a href="<?= Yii::app()->createUrl('/page/page/view', ['slug' => 'privacy-policy']); ?>"><?= Yii::t('OtherModule.other', 'Privacy Policy'); ?></a> | <a href="<?= Yii::app()->createUrl('/page/page/view', ['slug' => 'cookie-policy']); ?>"><?= Yii::t('OtherModule.other', 'Cookie Policy'); ?></a>
                     </div>
-                    <div class="footer-perm"><?= Yii::t('OtherModule.other', '© '); ?><?= date('Y') ?> EssaysBuddy. <?= Yii::t('OtherModule.other', 'All rights reserved'); ?>.</div>
+                    <div class="footer-perm"><?= Yii::t('OtherModule.other', '© '); ?><?= date('Y') ?> EssayFlow. <?= Yii::t('OtherModule.other', 'All rights reserved'); ?>.</div>
                 </div>
             </div>
             <div class="footer-main-col">

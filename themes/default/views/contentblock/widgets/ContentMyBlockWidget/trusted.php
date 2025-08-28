@@ -3,24 +3,39 @@
         <div class="container">
             <div class="trusted-head">
                 <div class="trusted-image"><img src="<?= Yii::app()->getTheme()->getAssetsUrl() . '/images/trusted/code.png'; ?>"></div>
-                <div class="trusted-title title title--words"><span>A+ Essays,</span><span>Custom-Written by</span><span class="text-bg"><span>Vetted</span><span>Academic</span><span>Experts.</span></span></div>
+                <div class="trusted-title title title--words"><?= $block->content; ?></div>
             </div>
         </div>
         <div class="trusted-main">
-            <div class="trusted-item">Article review</div>
-            <div class="trusted-item">Homework</div>
-            <div class="trusted-item">Music review</div>
-            <div class="trusted-item">Coursework</div>
-            <div class="trusted-item">Business Plan</div>
-            <div class="trusted-item">Presentation</div>
-            <div class="trusted-item">Book review</div>
-            <div class="trusted-item">Dissertation</div>
+            <div class="trusted-item">
+                <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted1', 'view' => 'trusted-item']); ?>
+            </div>
+            <div class="trusted-item">
+                <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted2', 'view' => 'trusted-item']); ?>
+            </div>
+            <div class="trusted-item">
+                <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted3', 'view' => 'trusted-item']); ?>
+            </div>
+            <div class="trusted-item">
+                <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted4', 'view' => 'trusted-item']); ?>
+            </div>
+            <div class="trusted-item">
+                <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted5', 'view' => 'trusted-item']); ?>
+            </div>
+            <div class="trusted-item">
+                <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted6', 'view' => 'trusted-item']); ?>
+            </div>
+            <div class="trusted-item">
+                <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted7', 'view' => 'trusted-item']); ?>
+            </div>
+            <div class="trusted-item">
+                <?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'trusted8', 'view' => 'trusted-item']); ?>
+            </div>
         </div>
         <div class="container">
             <div class="trusted-foot">
                 <div class="trusted-desc">
-                    <p>Whether you're crafting a college admission essay to stand out, a persuasive argument to sway opinions, or a deep literary analysis, our vetted experts tailor each word to your voice and goals. No generic templates, no AI fluff — just custom writing that meets your exact requirements, backed by research and polished to perfection.</p>
-                    <p>From first draft to final revision, we’re here to ensure your ideas shine with clarity, impact, and academic rigor.</p>
+                    <?= $block->content2; ?>
                 </div>
                 <div class="trusted-image"><img src="<?= Yii::app()->getTheme()->getAssetsUrl() . '/images/trusted/image.jpg'; ?>"></div>
             </div>
