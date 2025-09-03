@@ -15,7 +15,7 @@ $this->breadcrumbs = [Yii::t('OtherModule.other', 'Contacts')];
     <!--
     <p>Company name: Company name</p>
     <p>Company address: Company address</p>
-    <p>E-mail: <a href="mailto:welcome@swift-essay.com">welcome@swift-essay.com</a></p>
+    <p>E-mail: <a href="mailto:info@essay-flow.com">info@essay-flow.com</a></p>
     <br>
     -->
 

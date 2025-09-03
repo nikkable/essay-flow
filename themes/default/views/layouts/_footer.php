@@ -29,7 +29,7 @@
                     <div class="footer-info-col">
                         <div class="footer-desc"><?php $this->widget('application.modules.contentblock.widgets.ContentMyBlockWidget', ['code' => 'footer', 'view' => 'footer']); ?></div>
                         <div class="footer-payment">
-                            <img src="<?= Yii::app()->getTheme()->getAssetsUrl() . '/images/visa.svg'; ?>" width="70" height="70">
+                            <img src="<?= Yii::app()->getTheme()->getAssetsUrl() . '/images/visa-white.svg'; ?>" width="70" height="70">
                             <img src="<?= Yii::app()->getTheme()->getAssetsUrl() . '/images/mastercard.svg'; ?>" width="70" height="70">
                         </div>
                     </div>

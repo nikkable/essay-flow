@@ -1,5 +1,5 @@
 <?php if($block): ?>
-    <div class="every">
+    <div class="every" id="advantages">
         <div class="container">
             <div class="every-head">
                 <div class="every-col">
