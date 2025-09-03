@@ -279,7 +279,7 @@ return [
     'Save profile' => '',
     'Your IP was added to blacklist. You can\'t register!' => '',
     'Your e-mail was added to blacklist! You can\'t register!' => '',
-    'You was successfully registered on "{site}" !' => '',
+    'You were successfully registered on "{site}" !' => '',
     'To activate your account please go to ' => '',
     'Truly yours, administration of "{site}" !' => '',
     'Changing e-mail' => '',

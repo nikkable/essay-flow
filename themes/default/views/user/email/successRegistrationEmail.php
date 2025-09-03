@@ -3,7 +3,7 @@
 <head>
     <title><?= Yii::t(
             'UserModule.user',
-            'You was successfully registered on "{site}" !',
+            'You were successfully registered on "{site}" !',
             [
                 '{site}' => CHtml::encode(
                     Yii::app()->getModule('yupe')->siteName
@@ -15,7 +15,7 @@
 <body>
 <?= Yii::t(
     'UserModule.user',
-    'You was successfully registered on "{site}" !',
+    'You were successfully registered on "{site}" !',
     [
         '{site}' => CHtml::encode(
             Yii::app()->getModule('yupe')->siteName
