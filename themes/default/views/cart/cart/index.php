@@ -505,7 +505,7 @@ $this->title = Yii::t('OtherModule.other', 'Place new order');
         const coupons = getCoupons()
 
         $.each(coupons, function (index, el) {
-            if (cost >= el.min_order_price) {
+            if (parseFloat(cost) >= parseFloat(el.min_order_price)) {
                 switch (el.type) {
                     case 0: // $
                         delta += parseFloat(el.value)
