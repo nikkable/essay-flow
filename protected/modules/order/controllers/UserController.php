@@ -93,6 +93,9 @@ class UserController extends \yupe\components\controllers\FrontController
                     $criteria->params[':nonExistentUser'] = 0;
                 }
             }
+        } else {
+            $criteria->addCondition('t.user_id = :userId');
+            $criteria->params[':userId'] = $currentUserId;
         }
 
         // Дополнительные условия по статусу (применяются после проверки автора)
