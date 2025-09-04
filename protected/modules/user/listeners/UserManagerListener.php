@@ -104,7 +104,7 @@ class UserManagerListener
 
             $result = Yii::app()->db->createCommand($sql)->queryRow(true, [':userId' => $user->id]);
 
-            $message = "Сайт Essay Flow: \n";
+            $message = "Сайт " . Yii::app()->request->hostInfo . ": \n";
             $message .= "Регистрация нового пользователя c ID " . $user->id . " \n";
             $message .= "Email: " . $user->email . "\n";
             $message .= $result && isset($result['role']) && $result['role'] === 'author' ? "Роль: Автор" : "Роль: Пользователь";

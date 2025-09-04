@@ -54,7 +54,7 @@ class Report extends YiiBase
 </head>
 <body>
     <p>
-        <img src="https://essay-flow.com' . Yii::app()->getTheme()->getAssetsUrl() . '/images/logo-black.jpg' . '" alt="">
+        <img src="' . Yii::app()->request->hostInfo . Yii::app()->getTheme()->getAssetsUrl() . '/images/logo-black.jpg' . '" alt="">
     </p>
 
 	<h1>Invoice for payment #' . $this->order->orderNumber . ' </br>from ' . date('d.m.Y', strtotime($this->order->date)) . '.</h1>
@@ -63,7 +63,7 @@ class Report extends YiiBase
 		<tbody>
 			<tr>
 				<td width="20%">Company site:</td>
-				<th width="80%">essay-flow.com</th>
+				<th width="80%">' . Yii::app()->request->hostInfo . '</th>
 			</tr>
 			<tr>
 				<td width="20%">Company name:</td>
@@ -79,7 +79,7 @@ class Report extends YiiBase
 			</tr>
 			<tr>
 				<td width="20%">Company email:</td>
-				<th width="80%">info@essay-flow.com</th>
+				<th width="80%">' . Yii::app()->getModule('yupe')->email . '</th>
 			</tr>
 		</tbody>
 	</table>
