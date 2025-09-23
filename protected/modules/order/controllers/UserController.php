@@ -86,6 +86,12 @@ class UserController extends \yupe\components\controllers\FrontController
                     if ($user->subjects) {
                         $allowedSubjects = array_map('trim', $user->subjects);
                         $criteria->addInCondition('subject.code', $allowedSubjects);
+
+                        $languageIds = array_map('trim', $user->languages);
+
+                        if (!empty($languageIds)) {
+                            $criteria->addInCondition('language.code', $languageIds);
+                        }
                     }
                 } else {
                     // Если автор не верифицирован
@@ -118,7 +124,8 @@ class UserController extends \yupe\components\controllers\FrontController
         $dataProvider->setCriteria($criteria);
 
         $this->render('index', [
-            'dataProvider' => $dataProvider
+            'dataProvider' => $dataProvider,
+            'user' => $user
         ]);
     }
 }

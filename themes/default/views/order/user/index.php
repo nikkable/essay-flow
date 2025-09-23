@@ -36,6 +36,18 @@ $this->title = Yii::t('OtherModule.other', 'My orders');
 
     <br>
 
+    <?php
+        $emptyText = Yii::t("OtherModule.other", 'No results found');
+
+        if($user->author_verification_status != USER::AUTHOR_VERIFICATION_VERIFIED) {
+            $emptyText = Yii::t("OtherModule.other", 'Orders will appear here after your account is verified.');
+        }
+
+        if(!Yii::app()->user->checkAccess('author')) {
+            $emptyText = Yii::t("OtherModule.other", 'Your order list is empty. Create your first order now!');
+        }
+    ?>
+
     <?php $this->widget(
         'bootstrap.widgets.TbListView',
         [
@@ -47,6 +59,7 @@ $this->title = Yii::t('OtherModule.other', 'My orders');
             'itemsCssClass' => 'order-lists',
             'ajaxUpdate'=> true,
             'pagerCssClass' => 'pagination-box',
+            'emptyText' => '<div class="empty-results">' . $emptyText . '</div>',
             'pager' => [
                 'header' => '',
                 'lastPageLabel' => Yii::t("OtherModule.other", "Last page"),

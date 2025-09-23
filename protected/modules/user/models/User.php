@@ -1,6 +1,8 @@
 <?php
 use yupe\widgets\YPurifier;
 
+Yii::import('application.modules.other.OtherModule');
+
 /**
  * This is the model class for table "{{user_user}}".
  *
@@ -191,7 +193,7 @@ class User extends yupe\models\YModel
 
 
 
-    // ... добавьте в safe для поиска
+            // ... добавьте в safe для поиска
         ];
     }
 
@@ -400,6 +402,33 @@ class User extends yupe\models\YModel
         }
 
         return parent::beforeSave();
+    }
+
+    public function afterSave()
+    {
+        parent::afterSave();
+
+        if ($this->author_verification_status == self::AUTHOR_VERIFICATION_VERIFIED) {
+            Yii::app()->notify->send(
+                $this,
+                Yii::t('OtherModule.other', 'Verification Successful'),
+                '//user/email/verified',
+                [
+                    'user' => $this,
+                ]
+            );
+        }
+
+        if ($this->author_verification_status == self::AUTHOR_VERIFICATION_REJECTED) {
+            Yii::app()->notify->send(
+                $this,
+                Yii::t('OtherModule.other', 'Verification Unsuccessful'),
+                '//user/email/verified-reject',
+                [
+                    'user' => $this,
+                ]
+            );
+        }
     }
 
 

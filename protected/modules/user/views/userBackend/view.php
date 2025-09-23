@@ -120,6 +120,10 @@ $this->widget(
                 'name' => 'subjects',
                 'value' => implode(',', $model->subjects),
             ],
+            [
+                'name' => 'languages',
+                'value' => implode(',', $model->languages),
+            ],
             'skills',
             'linked',
             'file',
