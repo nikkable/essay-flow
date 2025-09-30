@@ -90,14 +90,14 @@
 <div class="cookie js-cookie">
     <div class="cookie-main">
         <p>
-            <?= Yii::t('OtherModule.other', 'We use'); ?> <a class="cookie-link" href="<?= Yii::app()->createUrl('/page/page/view', ['slug' => 'cookie-policy']); ?>" target="_blank" aria-label="cookie" rel="noreferrer"><?= Yii::t('OtherModule.other', 'cookies'); ?></a>
+            <?= Yii::t('OtherModule.other', 'Welcome! Quick Note on '); ?> <a class="cookie-link" href="<?= Yii::app()->createUrl('/page/page/view', ['slug' => 'cookie-policy']); ?>" target="_blank" aria-label="cookie" rel="noreferrer"><?= Yii::t('OtherModule.other', 'Cookies'); ?></a>
         </p>
-        <p><?= Yii::t('OtherModule.other', 'For the proper functioning of this website (including login, registration, and order management), the use of cookies is required.'); ?></p>
+        <p><?= Yii::t('OtherModule.other', "We use cookies to make sure you can log in, register, and handle your orders smoothly. Without them, the site can't operate fully."); ?></p>
         <p>
             <ul>
-                <li><?= Yii::t('OtherModule.other', 'By clicking "Accept all", you consent to the use of cookies for both essential website operations and visitor analytics.'); ?></li>
-                <li><?= Yii::t('OtherModule.other', 'Selecting "Only necessary" will enable only strictly required cookies for core functionality.'); ?></li>
-                <li><?= Yii::t('OtherModule.other', 'If you choose "Decline", key features of the website may become unavailable.'); ?></li>
+                <li><?= Yii::t('OtherModule.other', "Accept All: You're allowing us to use cookies for the site's basic functions and for gathering anonymous data on how visitors use our site."); ?></li>
+                <li><?= Yii::t('OtherModule.other', "Only Necessary: This keeps things simple by activating only the essential cookies required for core performance."); ?></li>
+                <li><?= Yii::t('OtherModule.other', "Decline: If you choose this, some of the website's main functions may unfortunately stop working or become unavailable."); ?></li>
             </ul>
         </p>
         <div class="cookie-buts">
