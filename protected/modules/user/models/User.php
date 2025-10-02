@@ -1049,7 +1049,7 @@ class User extends yupe\models\YModel
 
     public function isVerifyAuthorEnabled()
     {
-        return $this->nick_name && $this->phone && $this->street && $this->country && $this->city && $this->zipcode && $this->house && $this->subjects && $this->skills;
+        return $this->nick_name && $this->phone && $this->street && $this->country && $this->city && $this->zipcode && $this->house && $this->subjects && $this->languages && $this->skills;
     }
 
     /**
