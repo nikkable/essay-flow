@@ -33,16 +33,35 @@ $form = $this->beginWidget(
         <?php endif; ?>
     </div>
 
+    <div class="row m-b-4">
+        <div class="col col-xl-3">
+            <div class="m-t-2">
+                <?php if (Yii::app()->user->checkAccess('author')): ?>
+                    <a href="<?= Yii::app()->createUrl('/user/profile/toggle-author-role', ['enable' => 0]); ?>" class="btn btn-sm btn-secondary">
+                        <?= Yii::t('OtherModule.other', 'Disable author mode'); ?>
+                    </a>
+                <?php else: ?>
+                    <a href="<?= Yii::app()->createUrl('/user/profile/toggle-author-role', ['enable' => 1]); ?>" class="btn btn-sm btn-primary">
+                        <?= Yii::t('OtherModule.other', 'Enable author mode'); ?>
+                    </a>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-b-4">
+        <div class="col col-xl-3">
+            <div class="form-group">
+                <label for=""><?= Yii::t('OtherModule.other', 'Role'); ?></label>
+                <input type="text" class="form-control field-text" disabled value="<?= Yii::app()->user->checkAccess('author') ? Yii::t('OtherModule.other', 'Author') : Yii::t('OtherModule.other', 'User'); ?>">
+            </div>
+        </div>
+    </div>
+
     <div class="form cart-form">
         <?= $form->errorSummary($model); ?>
 
         <div class="row">
-            <div class="col col-xl-3">
-                <div class="form-group">
-                    <label for=""><?= Yii::t('OtherModule.other', 'Role'); ?></label>
-                    <input type="text" class="form-control field-text" disabled value="<?= Yii::app()->user->checkAccess('author') ? Yii::t('OtherModule.other', 'Author') : Yii::t('OtherModule.other', 'User'); ?>">
-                </div>
-            </div>
             <div class="col-12 col-md-4 col-xl-3">
                 <?= $form->textFieldGroup($model, 'nick_name', [
                     'widgetOptions' => [
@@ -394,6 +413,7 @@ $form = $this->beginWidget(
             const languagesSelectId = findSelectIdLike('languages');
             if (subjectsSelectId) initMultiCheckboxSelect('subjects-multiselect', subjectsSelectId);
             if (languagesSelectId) initMultiCheckboxSelect('languages-multiselect', languagesSelectId);
+
         });
     })();
 </script>

@@ -83,5 +83,6 @@ return [
         '/profile/email' => 'user/profile/email',
         '/profile/verify' => 'user/profile/verify',
         '/profile/verify-send' => 'user/profile/verifySend',
+        '/profile/toggle-author-role' => 'user/profile/toggle-author-role',
     ],
 ];

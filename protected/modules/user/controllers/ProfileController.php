@@ -75,6 +75,9 @@ class ProfileController extends \yupe\components\controllers\FrontController
             'verifySend' => [
                 'class' => 'application.modules.user.controllers.profile.VerifySendAction'
             ],
+            'toggle-author-role' => [
+                'class' => 'application.modules.user.controllers.profile.ToggleAuthorRoleAction'
+            ],
         ];
     }
 }
