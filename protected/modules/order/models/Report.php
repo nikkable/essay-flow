@@ -67,15 +67,15 @@ class Report extends YiiBase
 			</tr>
 			<tr>
 				<td width="20%">Company name:</td>
-				<th width="80%">Company name</th>
+				<th width="80%">Kvantor Service Kft</th>
 			</tr>
 			<tr>
 				<td width="20%">Company address:</td>
-				<th width="80%">Company address</th>
+				<th width="80%">1077 Budapest, Baross tér 17. Fsz. Ü3. ajtó, Hungary</th>
 			</tr>
 			<tr>
 				<td width="20%">Company reg number:</td>
-				<th width="80%">Company reg number</th>
+				<th width="80%">01-09-448626</th>
 			</tr>
 			<tr>
 				<td width="20%">Company email:</td>
