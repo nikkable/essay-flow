@@ -131,7 +131,7 @@ $this->title = Yii::t('OtherModule.other', 'Place new order');
                         <?= $form->errorSummary($order); ?>
 
                         <div class="form-group">
-                            <label for=""><?= Yii::t('OtherModule.other', 'Name'); ?> *</label>
+                            <label for=""><?= Yii::t('OtherModule.other', 'Your Name and Surname'); ?> *</label>
                             <?= $form->textField($order, 'name', ['class' => 'field-text form-control']); ?>
                             <?= $form->error($order, 'name'); ?>
                         </div>

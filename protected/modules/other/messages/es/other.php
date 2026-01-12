@@ -31,6 +31,7 @@ return [
     'Language' => 'Idioma',
     'Order description' => 'Descripción del pedido',
     'Name' => 'Nombre',
+    'Your Name and Surname' => 'Nombre',
     'Phone' => 'Teléfono',
     'Order now' => 'Pedir ahora',
     'Enter the promo code' => 'Introduzca el código promocional',
